@@ -9,7 +9,7 @@ file(GLOB HEADERS include/libE/*)
 
 add_library(libE ${SOURCES} ${HEADERS})
 set_target_properties(libE PROPERTIES CXX_STANDARD 17)
-target_link_libraries(libE PRIVATE CONAN_PKG::libB CONAN_PKG::libG CONAN_PKG::libI)
+target_link_libraries(libE PRIVATE CONAN_PKG::libA CONAN_PKG::libB CONAN_PKG::libG CONAN_PKG::libI)
 
 target_include_directories(
     libE PUBLIC
