@@ -17,7 +17,7 @@ class LibC(ConanFile):
     exports_sources = "LICENSE" # to avoid build info bug
 
     def requirements(self):
-        self.requires("libA/0.0@demo/testing")
+        self.requires("libA/[>=0.0]@demo/testing")
         self.requires("libB/0.0@demo/testing")
         self.requires("libG/0.0@demo/testing")
         self.requires("libI/0.0@demo/testing")
