@@ -4,4 +4,4 @@
 
 #include <string>
 
-void hello_libC(int indent, const std::string& msg="default");
+void hello_libE(int indent, const std::string& msg="default");

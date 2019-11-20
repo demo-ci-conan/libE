@@ -12,7 +12,7 @@ set_target_properties(libE PROPERTIES CXX_STANDARD 17)
 target_link_libraries(libE PRIVATE CONAN_PKG::libB CONAN_PKG::libG CONAN_PKG::libI)
 
 target_include_directories(
-    libC PUBLIC
+    libE PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/>
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 
